@@ -4,7 +4,7 @@ import logging
 import datetime
 from decimal import Decimal
 
-from ...models import MediciUser
+from ..db.models import MediciUser
 
 logger = logging.getLogger(__name__)
 
