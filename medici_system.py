@@ -52,7 +52,7 @@ def user_create(user_data):
     user_data = user_data['user_data']
     mediciuser = user_manager.user_create(user_data)
 
-    return SUCESS_MESSAGE
+    return SUCCESS_MESSAGE
 
 def user_update(mediciuser, user_data):
     logger.info("Received user update request from <" + mediciuser.user.username + ">.")
@@ -60,7 +60,7 @@ def user_update(mediciuser, user_data):
     user_data = user_data['user_data']
     user_manager.user_update(mediciuser, user_data)
 
-    return SUCESS_MESSAGE
+    return SUCCESS_MESSAGE
 
 def user_fetch(mediciuser, user_fields):
     logger.info("Received user fetch request from <" + mediciuser.user.username + ">.")
