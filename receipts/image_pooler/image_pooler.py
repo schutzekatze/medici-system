@@ -7,7 +7,7 @@ import os
 logger = logging.getLogger(__name__)
 
 def pool_image(mediciuser, image):
-    image_dir = '/home/flux/receipts/unlabeled'
+    image_dir = '/home/flux/new_receipts'
 
     if len(os.listdir(image_dir)) > 2000:
         return
